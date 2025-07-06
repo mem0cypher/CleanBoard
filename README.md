@@ -1,39 +1,45 @@
 # CleanBoard
 
-A simple Windows utility to quickly lock and unlock your keyboard with a global hotkey, managed from your system tray.
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/mem0cypher/CleanBoard/blob/main/LICENSE)
+[![Latest Release](https://img.shields.io/github/v/release/mem0cypher/CleanBoard)](https://github.com/mem0cypher/CleanBoard/releases/latest)
 
-![CleanBoard Demo](https://i.imgur.com/your-demo-image.gif) <!-- Replace with a real GIF if you make one! -->
+A simple and lightweight Windows utility to quickly lock and unlock your keyboard with a global hotkey, managed entirely from your system tray.
+
+![CleanBoard Demo](https://i.imgur.com/your-demo-image.gif) <!-- It's highly recommended to replace this with a real GIF of your application in action! -->
+
+## Why CleanBoard?
+
+Ever need to clean your keyboard without unplugging it? Or keep a cat from walking across your desk and typing a novel? CleanBoard is a hassle-free solution. It runs quietly in the background, giving you an instant and reliable way to disable your keyboard without interrupting your workflow.
 
 ## Features
 
-- **System Tray Icon**: Easily see the keyboard's lock status at a glance.
-  - **Green Icon**: Keyboard is unlocked.
-  - **Red Icon**: Keyboard is locked.
-- **Global Hotkey**: Press `Ctrl+Alt+L` anywhere in Windows to instantly toggle the keyboard lock.
-- **Right-Click Menu**: Use the tray icon menu to toggle the lock or exit the application.
-- **Lightweight**: Uses minimal system resources.
+- **Instant Keyboard Lock**: Use the global hotkey `Ctrl+Alt+L` to lock or unlock your keyboard at any time.
+- **System Tray Management**: The application lives in your system tray for easy access.
+  - 🟢 **Green Icon**: Keyboard is unlocked and ready to use.
+  - 🔴 **Red Icon**: Keyboard is locked and all input is blocked.
+- **Simple Menu**: Right-click the tray icon to toggle the lock or safely exit the application.
+- **Extremely Lightweight**: Designed to use minimal CPU and memory resources.
+- **Portable**: No installation required. Just run the `.exe` file.
 
 ## Getting Started
 
-There are two ways to use CleanBoard: by running the source code directly or by downloading the pre-built executable.
+### For Most Users (Recommended)
 
-### Option 1: For Users (Easy)
+1.  Go to the **[Releases](https://github.com/mem0cypher/CleanBoard/releases)** page.
+2.  Download the `CleanBoard.exe` file from the latest release.
+3.  Run it. That's it!
 
-You can download the latest `CleanBoard.exe` from the **[Releases](https://github.com/your-username/your-repo-name/releases)** page.
+### For Developers
 
-No installation is needed. Just download the file and run it.
-
-### Option 2: For Developers (From Source)
-
-If you have Python on your system, you can run the project from its source code.
+If you want to run the application from the source code:
 
 1.  **Clone the repository:**
     ```sh
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/mem0cypher/CleanBoard.git
+    cd CleanBoard
     ```
 
-2.  **Install dependencies:**
+2.  **Install the required dependencies:**
     ```sh
     pip install -r requirements.txt
     ```
@@ -43,22 +49,26 @@ If you have Python on your system, you can run the project from its source code.
     python run.py
     ```
 
-## Building the Executable (Optional)
+## Building From Source
 
-If you want to build the `.exe` from the source code yourself, you can use PyInstaller.
+Want to create your own `CleanBoard.exe`?
 
-1.  **Make sure you have installed the requirements:**
+1.  **Ensure all dependencies are installed, including PyInstaller:**
     ```sh
     pip install -r requirements.txt
     pip install pyinstaller
     ```
 
-2.  **Run the build command:**
+2.  **Run the PyInstaller build command:**
     ```sh
     pyinstaller --onefile --windowed --name CleanBoard run.py
     ```
 
-3.  The final `CleanBoard.exe` will be located in the `dist` folder.
+3.  Your new executable will be ready in the `dist` folder.
+
+## Contributing
+
+Contributions are welcome! If you have ideas for new features or have found a bug, please feel free to open an issue or submit a pull request.
 
 ## License
 
